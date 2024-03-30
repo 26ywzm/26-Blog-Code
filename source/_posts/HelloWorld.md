@@ -1,24 +1,16 @@
-﻿---
+---
 title: Hello World
-date: 2020-01-01 00:00:00
-# 文章出处名称 #
 from: Hexo
-# 文章出处链接 #
-url: https://hexo.io/
-# 文章作者名称 #
+url: 'https://hexo.io/'
 author: Hexo
-# 文章作者签名 #
 about: 快速、简洁且高效的博客框架
-# 文章作者头像 #
 avatar: /image/article/hexo.png
-# 是否开启评论 #
 comments: true
-# 文章标签 #
 tags: Hexo
-# 文章分类 #
 categories: Web
-# 文章摘要 #
 description: Hexo相关资料以及简单的使用教程.
+abbrlink: 1243066710
+date: 2020-01-01 00:00:00
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
