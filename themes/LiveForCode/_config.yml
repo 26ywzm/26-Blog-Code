@@ -1,8 +1,8 @@
 # ---- GitHub文件源配置 ----
 # GitHub用户名(不是昵称), 注意大小写
-GitHubUserName: "first19326"
+GitHubUserName: "26ywzm"
 # GitHub主题仓库名称
-GitHubRepositories: "Hexo-LiveForCode"
+GitHubRepositories: "26-Blog-Code"
 
 
 # ---- 基础信息配置 ----
@@ -235,7 +235,7 @@ MenuLink:
     href: "javascript:;"
     class: "image"
     target: "_self"
-    image: "/image/sidebar/qq.png"
+    image: "/image/sidebar/qq.jpg"
   -
     name: "微信"
     icon: "icon-wechat"
@@ -271,7 +271,7 @@ ConsoleList:
     - "BNDong"
   -
     - "Theme:"
-    - "LiveForCode"
+    - "26-Blog-Code"
 
 
 # ---- 字体图标扩展 ----
@@ -282,8 +282,8 @@ FontIconExtend: ""
 Donate: 
   paypal : ""
   bitcoin: ""
-  alipay : "/image/donate/alipay.png"
-  wechat : "/image/donate/wechat.png"
+  alipay : "/image/donate/alipay.jpg"
+  wechat : "/image/donate/wechat.jpg"
 
 
 # ---- Algolia配置 ----
