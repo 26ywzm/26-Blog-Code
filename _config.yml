@@ -66,3 +66,8 @@ theme: LiveForCode
 deploy:
   type: ''
 '[key]': '[value]'
+
+algolia:
+  applicationID: 'XAR1P767LX'
+  apiKey: '9454b908d51bd3d979deb8c76b840180'
+  indexName: '...'

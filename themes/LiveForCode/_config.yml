@@ -186,7 +186,7 @@ MenuList:
     class: ""
     target: "_self"
   -
-    name: "订阅"
+    name: "推荐"
     icon: "icon-rss"
     href: "/atom.xml"
     type: ""
@@ -288,8 +288,8 @@ Donate:
 
 # ---- Algolia配置 ----
 Search:
-  applicationID: "010C3EANT8"
-  apiKey: "c7abab9f11b79102b9aff7fe6d41447d"
+  applicationID: "XAR1P767LX"
+  apiKey: "9454b908d51bd3d979deb8c76b840180"
   indexName: "Notes"
   hits:
     page: 10

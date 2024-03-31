@@ -1,8 +1,8 @@
 # ---- GitHub文件源配置 ----
 # GitHub用户名(不是昵称), 注意大小写
-GitHubUserName: "first19326"
+GitHubUserName: "26ywzm"
 # GitHub主题仓库名称
-GitHubRepositories: "Hexo-LiveForCode"
+GitHubRepositories: "26-Blog-Code"
 
 
 # ---- 基础信息配置 ----
@@ -11,9 +11,9 @@ User: "26英文字母"
 # 用户头像URL
 UserAvatar: "/image/sidebar/avatar1.jpg"
 # 创建时间
-WebsiteStartDate: "2020-01-01"
+WebsiteStartDate: "2024-03-28"
 # 个人主页URL
-Home: "https://worstone.cn"
+Home: "https://26ywzm.icu"
 
 
 # ---- 网站配置 ----
