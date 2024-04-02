@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <meta name="referrer" content="origin">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>
+        
+            Hexo - Live For Code
+        
+    </title>
+    <link rel="shortcut icon" href="#"/>
+
+    <link type="text/css" rel="stylesheet" href="/font/LongCang.css">
+    <link type="text/css" rel="stylesheet" href="/font/Monda.css">
+    <link type="text/css" rel="stylesheet" href="/font/NotoSansSC.css">
+    <link type="text/css" rel="stylesheet" href="/font/NotoSerifSC.css">
+    <link type="text/css" rel="stylesheet" href="/font/Playball.css">
+    <link type="text/css" rel="stylesheet" href="/font/PTMono.css">
+    <link type="text/css" rel="stylesheet" href="/font/Roboto.css">
+    <link type="text/css" rel="stylesheet" href="/font/RobotoSlab.css">
+    <link type="text/css" rel="stylesheet" href="/font/Rosario.css">
+    <link type="text/css" rel="stylesheet" href="/font/UbuntuMono.css">
+
+    <link type="text/css" rel="stylesheet" href="/css/base.css">
+    <link type="text/css" rel="stylesheet" href="/css/code.css">
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body>
+    <a id="cover"></a>
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
+<div id="header" class="header">
+    <div class="vertical">
+        <div class="inner">
+            
+                <h1 class="header-subtitle">Hexo - Live For Code</h1>
+                <div class="header-subinfo">
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2024-03-28
+                        </span>
+                        
+                            
+                                <span id="/posts/3843978491/" class="leancloud_visitors" data-flag-title="Hexo - Live For Code">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/3843978491/"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                    
+                </div>
+            
+        </div>
+    </div>
+    
+</div>
+<div id="container">
+    
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <p>Hexo - Live For Code 主题介绍以及使用说明：<a target="_blank" rel="noopener" href="https://notes.worstone.cn/article/1112885395/">Hexo主题LiveForCode介绍</a></p>
+<h2 id="公告"><a href="#公告" class="headerlink" title="公告"></a>公告</h2><p>目前，jsDelivr 中国地区的功能已经 __恢复正常__。如果后续再次出现问题，可以切换 __本地的静态资源__，保证网站 __正常运行__。</p>
+<p>由于主题修改内容比较多，所以计划拆分版本，将当前的内容切换到 <strong>release-1.0.0</strong> 分支中，后续 <strong>master</strong> 分支将为 __最新版本主题__。由于静态资源有些许出入，所以将 <strong>CDN 静态资源</strong> 仓库同样进行了拆分。使用 <strong>1.0.0 版本</strong> 主题的小伙伴需要将 <strong>主题配置文件</strong> 静态资源链接中的 <code>@master</code> 修改为 <code>@release-1.0.0</code>。给大家带来的不便，深表歉意。</p>
+<h2 id="资源说明"><a href="#资源说明" class="headerlink" title="资源说明"></a>资源说明</h2><table>
+<thead>
+<tr>
+<th align="left">名称</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">static</td>
+<td align="left">此为主题 Style、Script、Font、Image 等静态资源文件</td>
+</tr>
+<tr>
+<td align="left">source</td>
+<td align="left">此为主题 文章、标签、分类 等模板文件</td>
+</tr>
+<tr>
+<td align="left">_config.yml</td>
+<td align="left">此为 Hexo 站点配置文件，仅供参考</td>
+</tr>
+<tr>
+<td align="left">LiveForCode</td>
+<td align="left">此为主题 Live For Code 页面模板等主要内容</td>
+</tr>
+</tbody></table>
+<p>提示：<br>如果在 <strong>主题配置文件</strong> 中添加新的配置信息，并且想要在 <code>javascript</code> 中使用，那么请将其同步配置到 <code>config.ejs</code> 中。在 <code>javascript</code> 中使用 <code>window.config.xxx</code> 获取对应的配置信息。  </p>
+<p>如果不想要在 <code>javascript</code> 中使用，或者只是修改 <strong>主题配置文件</strong> 中的配置信息，则不需要同步配置。  </p>
+<h2 id="后续计划"><a href="#后续计划" class="headerlink" title="后续计划"></a>后续计划</h2><ul>
+<li>添加本地搜索</li>
+<li>加入服务状态页面</li>
+<li>添加 <code>即刻短文</code> 功能</li>
+<li>标签外挂（Tag Plugins）</li>
+<li>卡片式风格（文章列表）</li>
+<li>图片懒加载</li>
+<li>使用变量统一样式文件</li>
+<li>添加 Hexo-Admin</li>
+<li>使用 Vue.js 重构项目</li>
+<li>加入 Pjax，优化页面加载速度</li>
+<li>补充国际化支持语言</li>
+<li>重新编写部署教程，添加视频教程</li>
+</ul>
+<h2 id="修改说明"><a href="#修改说明" class="headerlink" title="修改说明"></a>修改说明</h2><ul>
+<li>2023&#x2F;07&#x2F;04</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了 <strong>README.md</strong> 中 《<strong>Hexo主题LiveForCode介绍</strong>》文章链接错误的问题</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了音乐接口相关配置</li>
+<li><code>A</code> 新增了个人主页相关配置</li>
+<li><code>A</code> 新增了 <strong>函数节流</strong> 以及 <strong>函数防抖</strong></li>
+<li><code>U</code> 修改了版权信息</li>
+</ol>
+<ul>
+<li>2023&#x2F;05&#x2F;13</li>
+</ul>
+<ol>
+<li><code>A</code> 新增了深色模式下 <strong>网站图标</strong> 文件。</li>
+<li><code>A</code> 新增了 <strong>适配系统模式</strong> 更换 <strong>网站图标</strong> 的方法。</li>
+<li><code>U</code> 修改了 <strong>网站图标</strong> 相关配置，以适配更多场景。</li>
+</ol>
+<ul>
+<li>2023&#x2F;05&#x2F;02</li>
+</ul>
+<ol>
+<li><code>U</code> 修改了 <strong>mouse</strong> 相关文件位置，并修改对应的样式文件 <code>mouse.css</code>。</li>
+<li><code>U</code> 修改了 <strong>网站图标</strong> 文件，并修改了 <strong>主题配置文件</strong> 中对应的 <code>url</code>。</li>
+<li><code>U</code> 修改了主题默认配置。</li>
+</ol>
+<ul>
+<li>2023&#x2F;04&#x2F;19</li>
+</ul>
+<ol>
+<li><code>A</code> 新增了深色模式下的 <strong>Github SVG</strong> 文件。</li>
+<li><code>U</code> 修改了 <code>code.css</code> 样式。</li>
+<li><code>U</code> 修改了 <code>waline-custom.css</code> 样式，并修复了 <strong>Waline</strong> 在不同模式下代码高亮样式不一致的问题。</li>
+<li><code>U</code> 修改了 <code>donate.css</code> 样式，添加深色模式下 <strong>Donate</strong> 样式。</li>
+</ol>
+<ul>
+<li>2023&#x2F;04&#x2F;12</li>
+</ul>
+<ol>
+<li><code>A</code> 新增了右下角菜单按钮并绑定对应事件。</li>
+<li><code>U</code> 修改了 <strong>iconfont</strong> 内容。</li>
+<li><code>U</code> 修改了 <code>menu-bubble.css</code> 样式。</li>
+<li><code>U</code> 修改了 <strong>Tools</strong> 代码结构，拆分出了 <strong>Music</strong> 以及 <strong>Wrap-Right</strong> 模块。</li>
+<li><code>U</code> 修改了 <strong>Waline</strong> 代码样式。</li>
+<li><code>U</code> 修改了 <strong>Wrap-Right</strong> 代码结构、样式以及动画效果。</li>
+</ol>
+<ul>
+<li>2023&#x2F;04&#x2F;06</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了 <strong>Waline</strong> 样式错误的地方。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>U</code> 修改了评论模块背景图片，并且重新命名（相关样式文件进行了同步修改）。</li>
+<li><code>U</code> 修改了 <code>menu-bubble.css</code> 样式，关闭了在 <strong>Safari</strong> 浏览器中 <code>button</code> 点击的默认样式。</li>
+<li><code>U</code> 修改了 <code>valine.css</code> 样式，在移动端不显示评论模块的背景图片（<code>&lt;textarea&gt;</code> 标签在移动端不可以手动调整高度）。</li>
+<li><code>U</code> 修改了 <code>waline-custom.css</code> 样式，在移动端不显示评论模块的背景图片；修改了输入框以及文本框字体颜色（CSS 中的伪类不可以动态修改样式，即使是使用变量）。</li>
+</ol>
+<ul>
+<li>2023&#x2F;03&#x2F;29</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了深色模式下 <strong>Safari</strong> 浏览器中 <strong>Waline</strong> 输入框字体颜色不正确的问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了深色模式下 <strong>Waline</strong> 关于 <code>&lt;textarea&gt;</code> 标签 <code>placeholder</code> 字体颜色的样式。</li>
+<li><code>U</code> 修改了 <code>base.css</code> 中的样式。</li>
+<li><code>U</code> 修改了 <code>fancybox.css</code> 中的样式。</li>
+<li><code>U</code> 修改了 <code>clipboard.css</code> 中的样式，修复 <strong>Safari</strong> 浏览器下复制代码按钮点击后出现蓝色外边框的问题。</li>
+</ol>
+<ul>
+<li>2023&#x2F;03&#x2F;27</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了菜单按钮消失的问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了网页字符集（charset）设置。</li>
+<li><code>U</code> 更新了复制代码的方法，复制代码时，会清除选中代码样式。</li>
+</ol>
+<ul>
+<li>2023&#x2F;03&#x2F;20</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了代码块与行号分离的问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了邮件模板相关内容。</li>
+<li><code>U</code> 修改了 <strong>Waline</strong> 样式，并对 <code>720px</code> 以下屏幕尺寸进行适配。</li>
+</ol>
+<ul>
+<li>2023&#x2F;03&#x2F;12</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了文章列表样式出现的问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了 <strong>Waline</strong> 适配，可以在 <strong>主题配置文件</strong> 中配置并使用 Waline 相关功能。</li>
+<li><code>A</code> 新增了 <code>Hexo主题LiveForCode介绍</code> 文章中，关于 Waline 相关内容。</li>
+<li><code>U</code> 修改了 <strong>主题配置文件</strong> 中评论相关的属性。（说明：由于引入了 Waline 相关内容，所以对 <strong>主题配置文件</strong> 相关属性进行调整）</li>
+<li><code>U</code> 修改了 <code>Hexo主题LiveForCode介绍</code> 文章中，关于 Valine 相关内容。</li>
+<li><code>U</code> 更新了 <strong>浏览量</strong>、<strong>评论数</strong> 展示的逻辑。对于评论数而言，<code>theme.Comment.switch</code>（全局）、<code>theme.Waline.comment</code>（Waline）、<code>post.comments</code>（文章）优先级由高到低。对于浏览量而言，<code>theme.Valine.visitor</code>（Valine）或 <code>theme.Waline.pageview</code>（Waline）直接控制。</li>
+</ol>
+<ul>
+<li>2022&#x2F;07&#x2F;15</li>
+</ul>
+<ol>
+<li><code>U</code> 修改了首页样式。</li>
+<li><code>U</code> 修改了文章页面样式。</li>
+<li><code>U</code> 修改了 CDN 版本的 <strong>主题配置文件</strong> 名称。</li>
+<li><code>U</code> 修改了 CDN 版本的 <strong>主题配置文件</strong> 中的静态资源链接。（说明：由于即将 __发布新版本的主题__，静态资源有些出入，所以拆分了版本）</li>
+</ol>
+<ul>
+<li>2022&#x2F;06&#x2F;06</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了 Github Pages 统一跳转到 <code>notes.worstone.cn</code> 的问题。<strong>CNAME 文件</strong> 需要修改为自己的域名，如果出现此问题，请将内容清空。</li>
+<li><code>F</code> 修复了图片插件不生效的问题。</li>
+<li><code>F</code> 修复了 <code>&lt;blockquote&gt;</code> 标签样式异常的问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了 <code>Hexo主题LiveForCode介绍</code> 文章的相关图片。</li>
+<li><code>D</code> 删除了无用的图片。</li>
+</ol>
+<ul>
+<li>2022&#x2F;05&#x2F;21</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了网站样式丢失的问题，并提供了多种解决方案。</li>
+<li><code>F</code> 修复了 <strong>Valine</strong> 相关的问题，将相关设置还原，添加域名判断存在其他问题。</li>
+<li><code>F</code> 修复了归档页面样式问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了 <strong>Hexo-Abbrlink</strong> 插件，并引入相关设置，引入文章短链接替换日期加文章名称的形式。</li>
+<li><code>A</code> 新增了 __Valine Service__，引入评论邮件通知功能，以及评论后台管理。</li>
+<li><code>A</code> 新增了 <code>Hexo主题LiveForCode介绍</code> 文章中，关于 <strong>Vercel</strong> 部署以及 <code>Hexo-Abbrlink</code> 插件相关设置。</li>
+<li><code>U</code> 修改了 <strong>Valine</strong> 版本，并针对主题样式对其进行调整。</li>
+<li><code>U</code> 修改了静态资源文件引入方式，将其添加到 <strong>Hexo</strong> 主题目录中的 <code>source</code> 文件夹中。</li>
+</ol>
+<ul>
+<li>2022&#x2F;03&#x2F;20</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了 <strong>Valine</strong> 切换国际版 <strong>LeanCloud</strong> 时，由于域名 <code>us.avoscloud.com</code> 失效导致的 <strong>Valine</strong> 不可用的问题。需要用户添加 <strong>Valine</strong> 配置中的 <code>serverURLs</code>，内容为 <strong>LeanCloud</strong> 的 <code>Request Domain</code>。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了 <code>Hexo主题LiveForCode介绍</code> 文章中，关于 <strong>Valine</strong> 的相关问题。</li>
+<li><code>U</code> 修改了 <strong>Valine</strong> 设置，文章路径 <code>path</code> 新增域名判断，解决文章评论以及留言内容数据异常的问题。</li>
+</ol>
+<ul>
+<li>2021&#x2F;09&#x2F;30</li>
+</ul>
+<ol>
+<li><code>A</code> 新增了鼠标动画相关内容。该动画效果来源于 __@BNDong__。</li>
+<li><code>U</code> 修改了文章后缀的样式，在 <strong>720px</strong> 屏幕尺寸设备将隐藏文章后缀。</li>
+</ol>
+<ul>
+<li>2021&#x2F;08&#x2F;08</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了网页控制台提示的 <code>favicon.ico 404</code> 的问题，实际显示效果没有变化。</li>
+</ol>
+<ul>
+<li>2021&#x2F;08&#x2F;02</li>
+</ul>
+<ol>
+<li><code>U</code> 修改了 <code>Hexo主题LiveForCode介绍</code> 文章中，<strong>Algolia Search</strong> 设置中的错误内容。__感谢提供信息的小伙伴__。</li>
+</ol>
+<ul>
+<li>2021&#x2F;07&#x2F;01</li>
+</ul>
+<ol>
+<li><code>A</code> 新增了 <code>Hexo主题LiveForCode介绍</code> 文章中，<code>Cannot read property &#39;LongCang&#39; of undefined</code> 问题 以及 标签、分类、归档等页面 <code>404</code> 或 <code>Cannot GET</code> 问题的说明以及解决方案。</li>
+</ol>
+<ul>
+<li>2021&#x2F;05&#x2F;28</li>
+</ul>
+<ol>
+<li><code>U</code> 修改了网站首页的标题设置，即 <code>&lt;title&gt;</code> 标签内容。现在的网站首页的标题为 <strong>站点配置文件</strong> 中的 <code>title</code> 属性。</li>
+</ol>
+<ul>
+<li>2021&#x2F;03&#x2F;31</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了 <code>jsDelivr</code> 超过 <strong>50M</strong> 失效的问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>U</code> 修改了相关文件中的 <code>CDN</code> 配置链接，并将主题的静态资源文件提取到单独的仓库中，以便通过 <code>jsDelivr</code> 进行加速。    </li>
+<li><code>U</code> 修改了 <code>H5 &lt;video&gt;</code> 中的字幕样式。</li>
+</ol>
+<ul>
+<li>2021&#x2F;03&#x2F;26</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了设置成 <code>Meting</code> 后，无法加载音乐播放插件的问题。</li>
+</ol>
+<ul>
+<li>2021&#x2F;03&#x2F;20</li>
+</ul>
+<ol>
+<li><code>A</code> 新增了 <code>友情链接</code> 页面的图片，解决了由于网络原因图片加载失败的问题。    </li>
+<li><code>U</code> 修改了 <code>友情链接</code> 页面图片 <code>url</code>。    </li>
+<li><code>U</code> 修改了 <code>Hexo</code> 配置文件，修改了 <code>use_date_for_updated</code> 属性为 <code>updated_option</code> 以适应高版本的 <code>Hexo</code>，详细信息参考官方文档 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration#%E6%97%A5%E6%9C%9F-%E6%97%B6%E9%97%B4%E6%A0%BC%E5%BC%8F">日期 &#x2F; 时间格式</a>。</li>
+</ol>
+<ul>
+<li>2020&#x2F;11&#x2F;20</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了 <code>jsDelivr</code> 超过 <strong>50M</strong> 失效的问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>U</code> 修改了 <code>music</code> 文件的位置，将其调整到主题的 <code>source</code> 文件目录下，原位置只保留主题默认的一首歌曲信息。  </li>
+<li><code>U</code> 修改了主题中音乐播放器配置中的歌曲信息，修改其访问路径。  </li>
+<li><code>U</code> 修改了 <code>Hexo主题LiveForCode介绍</code> 文章中，音乐播放器相关内容。</li>
+</ol>
+<ul>
+<li>2020&#x2F;11&#x2F;09</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了文章 <code>&lt;ol&gt;</code> 标签样式异常的问题。  </li>
+<li><code>F</code> 修复了文章中某些代码块字体大小异常的问题。  </li>
+<li><code>F</code> 修复了手机端横屏时，字体大小异常的问题。  </li>
+<li><code>F</code> 修复了菜单配置异常的问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了 <code>Hexo主题LiveForCode介绍</code> 文章中，安装主题时 <code>source</code> 文件夹处理的相关内容，解决安装主题后，分类、标签、赞赏等页面出现的 <code>404</code> 情况，__十分抱歉给各位带来不好的体验__。  </li>
+<li><code>A</code> 新增了 <code>Hexo主题LiveForCode介绍</code> 文章中，<code>404</code> 错误页面的设置内容。  </li>
+<li><code>A</code> 新增了 <code>Hexo主题LiveForCode介绍</code> 文章中，音乐播放器相关内容。  </li>
+<li><code>U</code> 修改了 <code>Hexo主题LiveForCode介绍</code> 文章的排版格式。</li>
+</ol>
+<ul>
+<li>2020&#x2F;11&#x2F;08</li>
+</ul>
+<ol>
+<li><code>A</code> 新增了 <code>APlayer</code> 相关的音乐文件 <code>music</code>，其中包括封面、歌曲以及歌词。  </li>
+<li><code>A</code> 新增了 <code>APlayer</code> 相关设置，可以不再依赖 <code>Meting.js</code> 实现音乐播放器功能，并且保留 <code>Meting.js</code> 的实现方式，可以相互切换。</li>
+</ol>
+<ul>
+<li>2020&#x2F;11&#x2F;05</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了当前 <code>404</code> 页面存在的小问题，例如 <code>404</code> 标题重影问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了 <code>404</code> 页面背景图片。  </li>
+<li><code>U</code> 修改了主题 <code>LiveForCode</code> 中的 <code>404</code> 页面原型以及主题中的 <code>404</code> 页面相关文件。适配了手机端样式，以及高分辨率下的样式。</li>
+</ol>
+<ul>
+<li>2020&#x2F;10&#x2F;22</li>
+</ul>
+<ol>
+<li><code>U</code> 修改了 <code>Hexo主题LiveForCode介绍</code> 文章中关于主题安装部分的错误内容。</li>
+</ol>
+<ul>
+<li>2020&#x2F;09&#x2F;17</li>
+</ul>
+<ol>
+<li><code>U</code> 修改了菜单样式，适配手机端的 <code>Safari</code> 浏览器。<code>Safari</code> 浏览器在上滑的时候会隐藏底部的工具栏，此时点击工具栏所在区域的链接时，默认触发 <strong>底部工具栏显示</strong> 的事件，然后触发页面调整，将点击元素内容移出工具栏所在区域，并且阻止元素后续事件。但是当元素样式为 <code>position: fixed</code> 时，底部工具栏显示会直接将元素内容遮盖，并阻止元素后续事件，导致元素无法点击。（<code>ios 13</code> 新的特性，可以将 <code>Safari</code> 浏览器的底部工具栏设置为时刻隐藏的状态，但是这也出现了一个问题，那就是隐藏了工具栏以后，工具栏对应位置的所有 <strong>点击事件</strong> 失效）  </li>
+<li><code>U</code> 修改了 <code>#sidebar</code> 元素的位置，使页面布局更加合理。</li>
+</ol>
+<ul>
+<li>2020&#x2F;09&#x2F;15</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了菜单滚动条在移动端穿透的问题。  </li>
+<li><code>F</code> 修复了查询窗口中的输入框获取焦点时，页面缩放的问题。  </li>
+<li><code>F</code> 修复了查询窗口在移动端滚动事件从当前元素中逃逸的问题。  </li>
+<li><code>F</code> 修复了移动端搜索窗口在搜索框获得焦点时，<code>body</code> 仍会发生滚动的问题。  </li>
+<li><code>F</code> 修复了移动端菜单按钮的图标与单词错位的问题。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了 <code>iscroll.js</code> 滚动插件，解决查询窗口滚动逃逸的问题。  </li>
+<li><code>D</code> 删除了页面中 <code>#sidebar</code> 元素样式。（仅仅是一个盒子元素，没有在页面显示）  </li>
+<li><code>D</code> 删除了 <code>optiscroll.js</code> 滚动插件以及对应样式。  </li>
+<li><code>D</code> 删除了 <code>jquery.mousewheel.js</code> 插件。（此插件是 <code>mCustomScrollbar.js</code> 插件的依赖插件，之前修改遗漏）  </li>
+<li><code>U</code> 修改了文章列表页面阅读统计部分样式，使其响应式效果更佳。  </li>
+<li><code>U</code> 修改了菜单的页面结构以及样式，使之可以支持原生的滚动事件。</li>
+</ol>
+<ul>
+<li>2020&#x2F;09&#x2F;13</li>
+</ul>
+<ol>
+<li><code>A</code> 新增了 <code>word-two</code>、<code>word-three</code> 样式，用于文章信息卡片。文章信息卡片中的信息标题默认为 <code>4</code> 字，如果修改为 <code>2</code> 字或者 <code>3</code> 字，添加对应样式即可。  </li>
+<li><code>U</code> 修改了文章页样式，包括：文章标签与分类信息字体、文章信息卡片字体以及信息标题样式。  </li>
+<li><code>U</code> 修改了评论列表样式，<code>Valine.js</code> 在没有评论下的字体颜色。  </li>
+<li><code>U</code> 修改了文章页图片样式，图片修改为居中放置。</li>
+</ol>
+<ul>
+<li>2020&#x2F;09&#x2F;12</li>
+</ul>
+<ol>
+<li><code>F</code> 修复了 <code>Valine.js 1.4.14</code> 版本中 获取用户 <code>IP</code> 接口 <code>MIME</code> 类型不匹配错误。  </li>
+<li><code>F</code> 修复了代码块换行以及字体大小变化等样式错误。</li>
+</ol>
+<br/>
+
+<ol>
+<li><code>A</code> 新增了 <code>Hexo</code> 自带的代码高亮配置，因其是通过生成静态页面的时候，直接解析 <code>Markdown</code> 内容，生成对应的代码格式，并通过页面的 <code>Style</code> 文件，实现代码高亮。  </li>
+<li><code>A</code> 新增了新的代码高亮样式 <code>normal</code> 以及 <code>night</code>，分别为 <a target="_blank" rel="noopener" href="https://github.com/chriskempson/tomorrow-theme">Tomorrow Theme</a> 中的 <code>Tomorrow</code> 以及 <code>Tomorrow Night Eighties</code>，稍有修改。  </li>
+<li><code>D</code> 删除了 <code>mCustomScrollbar.js</code> 代码块的滚动条插件。（由于 IE 浏览器以及手机端兼容性问题）  </li>
+<li><code>D</code> 删除了 <code>highlight.js</code> 代码高亮插件。（由于 <code>highlight.js</code> 插件必须在 <code>javascript</code> 中动态处理代码块高亮，若 <code>Markdown</code> 中的代码块过多，则会导致页面加载速度略慢、客户端性能开销稍大）  </li>
+<li><code>U</code> 修改了代码块的样式，固定代码行，设置仅代码内容可以水平滚动。</li>
+</ol>
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/avatar1.jpg" alt="26英文字母">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>26英文字母
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/3843978491/" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+                
+                
+                <div class="article-prev-next">
+                    
+                    
+                        <a href="/posts/1960974432/" class="next-prefix">» </a> 下一篇：    <a href="/posts/1960974432/" title="发布于 2024-03-26 03:46">哈喽</a>
+                    
+                </div>
+            </div>
+            
+    <div class="article-comments">
+        
+            <div class="comments-title">
+                评论列表
+            </div>
+        
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
+    
+</div>
+    <div id="footer">
+    <div><span class='face'>ღゝ◡╹)ノ♡</span></div> <div>【岂能尽如人意<span><i class='iconfont icon-like-fill'></i></span>但求无愧于心】</div> <div>&copy; 2020-2023 WorstOne. All Rights Reserved.</div> 
+</div>
+    <div id="sidebar">
+    <div class="menu-wrap" style="display:none;">
+        
+            <div class="menu-notice">
+                <span class="iconfont icon-notice"></span>
+                <div class="notice">
+                    <span>不畏过往，不惧将来。既然选择远方，就注定风雨兼程。</span>
+                </div>
+            </div>
+        
+        <nav class="menu">
+            <div class="menu-introduce"> 
+                <div class="introduce-avatar">
+                    <img src="/image/sidebar/avatar1.jpg">
+                </div> 
+                <div class="introduce-info"> 
+                    <div class="introduce-user">
+                        
+                            <a href="https://26ywzm.icu" target="_blank"><span>26英文字母</span></a>
+                        
+                    </div>
+                </div> 
+            </div> 
+            <div class="menu-list">
+                <ul>
+                    
+                        <li class=""><a href="/" class="" target="_self"><span class="iconfont icon-home-fill"></span>首页</a></li>
+                    
+                        <li class=""><a href="/category" class="" target="_self"><span class="iconfont icon-folder-fill"></span>分类</a></li>
+                    
+                        <li class=""><a href="/tag" class="" target="_self"><span class="iconfont icon-discount-fill"></span>标签</a></li>
+                    
+                        <li class=""><a href="/archive" class="" target="_self"><span class="iconfont icon-calendar-fill"></span>归档</a></li>
+                    
+                        <li class=""><a href="/donate" class="" target="_self"><span class="iconfont icon-heart-fill"></span>赞赏</a></li>
+                    
+                        <li class=""><a href="/about" class="" target="_self"><span class="iconfont icon-about-fill"></span>关于</a></li>
+                    
+                        <li class=""><a href="/atom.xml" class="" target="_blank"><span class="iconfont icon-rss"></span>推荐</a></li>
+                    
+                        <li class=""><a href="javascript:;" class="search" target="_self"><span class="iconfont icon-search-menu"></span>搜索</a></li>
+                    
+                        <li class=""><a href="/comment" class="" target="_self"><span class="iconfont icon-comments-fill"></span>留言板</a></li>
+                    
+                        <li class=""><a href="/friend" class="" target="_self"><span class="iconfont icon-link"></span>友情链接</a></li>
+                    
+                </ul> 
+            </div> 
+            <div class="menu-link">
+                <div class="box">
+                    <div class="image-box"></div>
+                </div>
+                
+                    <a name="知乎" href="https://www.zhihu.com/people/26ge-ying-wen-zi-mu-23" class="" target="_blank" data=""><span class="iconfont icon-zhihu"></span></a>
+                
+                    <a name="微博" href="https://weibo.com/u/5749847477" class="" target="_blank" data=""><span class="iconfont icon-weibo"></span></a>
+                
+                    <a name="QQ" href="javascript:;" class="image" target="_self" data="/image/sidebar/qq.jpg"><span class="iconfont icon-qq"></span></a>
+                
+                    <a name="微信" href="javascript:;" class="" target="_self" data=""><span class="iconfont icon-wechat"></span></a>
+                
+                    <a name="GitHub" href="https://github.com/26ywzm" class="" target="_blank" data=""><span class="iconfont icon-github"></span></a>
+                
+            </div> 
+        </nav>
+        <button class="menu-button-close"></button>
+        <div class="morph-shape" id="morph-shape" data-morph-open="M-7.312,0H15c0,0,66,113.339,66,399.5C81,664.006,15,800,15,800H-7.312V0z;M-7.312,0H100c0,0,0,113.839,0,400c0,264.506,0,400,0,400H-7.312V0z">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 800" preserveAspectRatio="none">
+                <path d="M-7.312,0H0c0,0,0,113.839,0,400c0,264.506,0,400,0,400h-7.312V0z"/>
+            </svg>
+        </div>
+    </div>
+    <button class="menu-button-open">MENU</button>
+    <div class="menu-cover"></div>
+</div>
+    <link type="text/css" rel="stylesheet" href="/css/search.css">
+<script type="text/javascript" src="/js/iscroll.js"></script>
+<script type="text/javascript" src="/js/instantsearch.min.js"></script>
+<div class="search-window">
+    <div class="search-content">
+        <div class="search-content-icon">
+            <i class="iconfont icon-search"></i>
+        </div>
+        <div id="search-input" class="search-input"></div>
+    </div>
+
+    <div class="search-scroll">
+        <div class="search-result">
+            <div id="search-stats" class="search-stats"></div>
+            <div id="search-hits"></div>
+            <div id="search-pagination" class="search-pagination"></div>
+        </div>
+    </div>
+
+    <span class="search-close-icon">
+        <i class="iconfont icon-close"></i>
+    </span>
+</div>
+    <div id="tools">
+    <div class="progressbar-top"></div>
+    
+    <link type="text/css" rel="stylesheet" href="/css/APlayer.css">
+    <script type="text/javascript" src="/js/APlayer.min.js"></script>
+    <script type="text/javascript" src="/js/Meting.min.js"></script>
+    <script>
+        var meting_api = 'https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&auth=:auth&r=:r';
+    </script>
+    <meting-js id="3778678" lrcshow="false" server="netease" type="playlist" fixed="true" autoplay="false" loop="all" order="random" preload="auto" volume="0.67" mutex="true"></meting-js>
+
+    <div class="wrap-right">
+    <div class="wrap-right-hide">
+         <div class="wrap-right-button favorites">
+            <div class="iconbox" switch="false">
+                <span class="iconfont icon-favorites"></span>
+            </div>
+            <span class="icontext">关注</span>
+         </div>
+        <div class="wrap-right-button search">
+            <div class="iconbox">
+                <span class="iconfont icon-search-menu"></span>
+            </div>
+            <span class="icontext">搜索</span>
+        </div>
+        <div class="wrap-right-button menu-button">
+            <div class="iconbox">
+                <span class="iconfont icon-menu"></span>
+            </div>
+            <span class="icontext">菜单</span>
+        </div>
+        <div class="wrap-right-button mode">
+            <div class="light">
+                <div class="iconbox">
+                    <span class="iconfont icon-daymode"></span>
+                </div>
+                <span class="icontext">浅色模式</span>
+            </div>
+            <div class="dark">
+                <div class="iconbox">
+                    <span class="iconfont icon-nightmode-fill"></span>
+                </div>
+                <span class="icontext">深色模式</span>
+            </div>
+        </div>
+        <div class="wrap-right-button bottom">
+            <div class="iconbox">
+                <span class="iconfont icon-top"></span>
+            </div>
+            <span class="icontext">跳至底部</span>
+        </div>
+    </div>
+    <div class="wrap-right-show">
+        <div class="wrap-right-button set">
+            <div class="iconbox">
+                <span class="iconfont icon-setting"></span>
+            </div>
+            <span class="icontext">设置</span>
+        </div>
+        <div class="wrap-right-button top">
+            <div class="iconbox">
+                <span class="iconfont icon-top"></span>
+            </div>
+            <span class="icontext">返回顶部</span>
+        </div>
+    </div>
+</div>
+    <div class="loading"></div>
+</div>
+    <script>
+    window.config = {
+        GitHubUserName     : "26ywzm",
+        GitHubRepositories : "26-Blog-Code",
+
+        User             : "26英文字母",
+        UserAvatar       : "/image/sidebar/avatar1.jpg",
+        WebsiteStartDate : "2024-03-26",
+        Home             : "https://26ywzm.icu",
+
+        WebsiteTitleBlur         : "(◍´꒳`◍) Hi ,看过来！看过来！",
+        WebsiteTitleBlurTimeOut  : 500,
+        WebsiteTitleFocus        : "(*´∇｀*) 欢迎回来!",
+        WebsiteTitleFocusTimeOut : 1000,
+        WebsiteFavicon           : {
+            light : "/image/website/logo/logo.png",
+            dark  : "/image/website/logo/logo-dark.png"
+        },
+
+        ProgressBar : {
+            id       : "topProgressBar",
+            color    : "#77B6FF",
+            height   : "2px",
+            duration : 0.2
+        },
+
+        Loading: {
+            rebound : {
+                tension  : 16,
+                friction : 5
+            },
+            spinner : {
+                id     : "spinner",
+                radius : 90,
+                sides  : 3,
+                depth  : 4,
+                colors : {
+                    background : "#F0F0F0",
+                    stroke     : "#272633",
+                    base       : "",
+                    child      : "#272633"
+                },
+                alwaysForward : true,
+                restAt        : 0.5,
+                renderBase    : false
+            }
+        },
+
+        HomeHeaderAnimationRendered : true,
+        HomeHeaderAnimation         : {
+            radius      : 15,
+            density     : 0.2,
+            color       : "rgba(255, 255, 255, .2)",
+            clearOffset : 0.3
+        },
+
+        BackAnimationRendered          : true,
+        IEBrowserBackAnimationRendered : false,
+        BackAnimation                  : {
+            colorSaturation  : "60%",
+            colorBrightness  : "50%",
+            colorAlpha       : 0.5,
+            colorCycleSpeed  : 5,
+            verticalPosition : "random",
+            horizontalSpeed  : 200,
+            ribbonCount      : 3,
+            strokeSize       : 0,
+            parallaxAmount   : -0.2,
+            animateSections  : true
+        },
+
+        HomeHeaderImage : [
+            
+                "/image/header/home.jpeg",
+            
+                "/image/header/ho.jpg",
+            
+                "/image/header/head1.jpg",
+            
+                "/image/header/head2.jpg",
+            
+                "/image/header/head3.jpg",
+            
+                "/image/header/head4.jpg",
+            
+                "/image/header/head5.jpg",
+            
+        ],
+        HomeBannerText  : "",
+
+        ArticleHeaderImage : [
+            
+                "/image/header/ho.jpg",
+            
+                "/image/header/article1.png",
+            
+                "/image/header/article2.jpg",
+            
+                "/image/header/article3.jpg",
+            
+        ],
+
+        OtherBannerText : "",
+
+        Error : {
+            icon    : "icon-swimming",
+            title   : "PAGE NOT FOUND",
+            content : [
+                
+                    "很抱歉，您访问的页面不存在！",
+                
+                    "可能是输入地址有误或该地址已变更。",
+                
+            ],
+            buttons : [
+                
+                    {
+                        icon  : "icon-home",
+                        text  : "返回首页",
+                        href  : "/",
+                        class : ""
+                    },
+                
+            ]
+        },
+
+        MenuNotice : {
+            enable : true,
+            notice : "不畏过往，不惧将来。既然选择远方，就注定风雨兼程。",
+            speed  : 20
+        },
+        MenuList : [
+            
+                {
+                    name   : "首页",
+                    icon   : "icon-home-fill",
+                    href   : "/",
+                    type   : "index",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "分类",
+                    icon   : "icon-folder-fill",
+                    href   : "/category",
+                    type   : "category",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "标签",
+                    icon   : "icon-discount-fill",
+                    href   : "/tag",
+                    type   : "tag",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "归档",
+                    icon   : "icon-calendar-fill",
+                    href   : "/archive",
+                    type   : "archive",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "赞赏",
+                    icon   : "icon-heart-fill",
+                    href   : "/donate",
+                    type   : "donate",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "关于",
+                    icon   : "icon-about-fill",
+                    href   : "/about",
+                    type   : "about",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "推荐",
+                    icon   : "icon-rss",
+                    href   : "/atom.xml",
+                    type   : "",
+                    class  : "",
+                    target : "_blank"
+                },
+            
+                {
+                    name   : "搜索",
+                    icon   : "icon-search-menu",
+                    href   : "javascript:;",
+                    type   : "",
+                    class  : "search",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "留言板",
+                    icon   : "icon-comments-fill",
+                    href   : "/comment",
+                    type   : "comment",
+                    class  : "",
+                    target : "_self"
+                },
+            
+                {
+                    name   : "友情链接",
+                    icon   : "icon-link",
+                    href   : "/friend",
+                    type   : "friend",
+                    class  : "",
+                    target : "_self"
+                },
+            
+        ],
+        MenuLink : [
+            
+                
+                    {
+                        name   : "知乎",
+                        icon   : "icon-zhihu",
+                        href   : "https://www.zhihu.com/people/26ge-ying-wen-zi-mu-23",
+                        class  : "",
+                        target : "_blank",
+                        image  : ""
+                    },
+                
+                    {
+                        name   : "微博",
+                        icon   : "icon-weibo",
+                        href   : "https://weibo.com/u/5749847477",
+                        class  : "",
+                        target : "_blank",
+                        image  : ""
+                    },
+                
+                    {
+                        name   : "QQ",
+                        icon   : "icon-qq",
+                        href   : "javascript:;",
+                        class  : "image",
+                        target : "_self",
+                        image  : "/image/sidebar/qq.jpg"
+                    },
+                
+                    {
+                        name   : "微信",
+                        icon   : "icon-wechat",
+                        href   : "javascript:;",
+                        class  : "",
+                        target : "_self",
+                        image  : ""
+                    },
+                
+                    {
+                        name   : "GitHub",
+                        icon   : "icon-github",
+                        href   : "https://github.com/26ywzm",
+                        class  : "",
+                        target : "_blank",
+                        image  : ""
+                    },
+                
+            
+        ],
+
+        FooterStyle : 2,
+        BottomText  : "<div><span class='face'>ღゝ◡╹)ノ♡</span></div> <div>【岂能尽如人意<span><i class='iconfont icon-like-fill'></i></span>但求无愧于心】</div> <div>&copy; 2020-2023 WorstOne. All Rights Reserved.</div> ",
+
+        ConsoleList : [
+            
+                
+                    [
+                        
+                            
+                                "Based on cnblogs theme SimpleMemory.",
+                            
+                                "",
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                "SimpleMemory Author:",
+                            
+                                "BNDong",
+                            
+                        
+                    ],
+                
+                    [
+                        
+                            
+                                "Theme:",
+                            
+                                "26-Blog-Code",
+                            
+                        
+                    ],
+                
+            
+        ],
+
+        FontIconExtend : "",
+
+        Donate : {
+            paypal  : "",
+            bitcoin : "",
+            alipay  : "/image/donate/alipay.jpg",
+            wechat  : "/image/donate/wechat.jpg"
+        },
+
+        Search : {
+            applicationID : "XAR1P767LX",
+            apiKey        : "9454b908d51bd3d979deb8c76b840180",
+            indexName     : "my-hexo-blog",
+            hits          : {
+                page : 10
+            },
+            labels        : {
+                placeholder : "搜索",
+                empty       : "未发现与 「${query}」 相关的内容",
+                stats       : "${hits} 条相关条目，使用了 ${time} 毫秒",
+            }
+        }, 
+
+        Comment : {
+            switch : true,
+            type   : "Valine",
+        },
+
+        Waline : {
+            el              : ".comments-content",
+            serverURL       : "",
+            path            : window.location.pathname,
+            meta            : "['nick', 'mail', 'link']",
+            requiredMeta    : "['nick', 'mail']",
+            pageSize        : 10,
+            lang            : "zh-cn",
+            locale: {
+                admin       : "博主",
+                anonymous   : "匿名用户",
+                sofa        : "快来做第一个评论的人吧 ~",
+                placeholder : "你是我一生只会遇见一次的惊喜...",
+            },
+            dark            : "html[color-scheme='dark']",
+            search          : false,
+            pageview        : true,
+            comment         : true,
+            copyright       : false,
+        },
+
+        Valine : {
+            el             : ".comments-content",
+            appId          : "srhKtvWPQTWYKh3qX8G8M7v0-gzGzoHsz",
+            appKey         : "8uVSP1q6UlALVC5igYfIfv2h",
+            serverURLs     : "",
+            placeholder    : "你是我一生只会遇见一次的惊喜...",
+            avatar         : "mm",
+            meta           : "nick,mail,link",
+            requiredFields : "nick,mail",
+            pageSize       : 5,
+            lang           : "zh-cn",
+            visitor        : true,
+            enableQQ       : true
+        },
+
+        Tocbot : {
+            switch                : true,
+            tocSelector           : ".toc",
+            contentSelector       : ".article-body",
+            headingSelector       : "h1, h2, h3, h4, h5",
+            headingsOffset        : 0,
+            scrollSmooth          : true,
+            scrollSmoothOffset    : -5,
+            positionFixedSelector : ".toc",
+            positionFixedClass    : "toc-fixed",
+            fixedSidebarOffset    : "",
+        },
+
+        Require : {
+            baseUrl     : "/js/",
+            waitSeconds : 100
+        },
+
+        Music : {
+            type : "Meting"
+        },
+        APlayer : {
+            container : ".aplayer",
+            fixed     : true,
+            autoplay  : false,
+            loop      : "all",
+            order     : "random",
+            preload   : "auto",
+            volume    : 0.67,
+            mutex     : true,
+            lrcType   : 3,
+            audio     : [
+                
+                    {
+                        name   : "Endless Tears",
+                        artist : "CLIFF EDGE",
+                        cover  : "/music/cover/Endless Tears.jpg",
+                        url    : "/music/song/Endless Tears.mp3",
+                        lrc    : "/music/lrc/Endless Tears.lrc"
+                    },
+                
+            ]
+        },
+        Meting : {
+            api      : "https://api.i-meto.com/meting/api",
+            id       : "3778678", 
+            lrcshow  : false, 
+            server   : "netease", 
+            type     : "playlist", 
+            fixed    : true, 
+            autoplay : false, 
+            loop     : "all", 
+            order    : "random", 
+            preload  : "auto", 
+            volume   : 0.67, 
+            mutex    : true
+        },
+
+        Mouse : {
+            enable  : true,
+            options : {
+                size  : 6,
+                sizeF : 24
+            }
+        },
+
+        LazyLoad : {
+            default : "/image/website/lazyload.svg"
+        },
+  
+        Style : {
+            aplayer          : "/css/APlayer.css",
+            archive          : "/css/archive.css",
+            base             : "/css/base.css",
+            clipboard        : "/css/clipboard.css",
+            code             : "/css/code.css",
+            donate           : "/css/donate.css",
+            fancybox         : "/css/jquery.fancybox.css",
+            footer           : "/css/footer.css",
+            iconfont         : "/iconfont/iconfont.css",
+            index            : "/css/index.css",
+            menuBubble       : "/css/menu-bubble.css",
+            mouse            : "/css/mouse.css",
+            page             : "/css/page.css",
+            post             : "/css/post.css",
+            search           : "/css/search.css",
+            tocbot           : "/css/tocbot.css",
+            valine           : "/css/valine.css",
+            waline           : "/css/waline.css",
+            walineCustom     : "/css/waline-custom.css"
+        },
+
+        Script: {
+            aplayer          : "/js/APlayer.min.js",
+            config           : "/js/require.config.js",
+            index            : "/js/index.js",
+            instantSearch    : "/js/instantsearch.min.js",
+            iscroll          : "/js/iscroll.js",
+            jQuery           : "/js/jquery-3.4.1.min.js",
+            loading          : "/js/loading.js",
+            meting           : "/js/Meting.min.js",
+            require          : "/js/require.min.js",
+            waline           : "/js/waline.mjs",
+            pageview         : "/js/pageview.mjs",
+            comment          : "/js/comment.mjs",
+        },
+
+        Font: {
+            LongCang    : "/font/LongCang.css",
+            Monda       : "/font/Monda.css",
+            NotoSansSC  : "/font/NotoSansSC.css",
+            NotoSerifSC : "/font/NotoSerifSC.css",
+            Playball    : "/font/Playball.css",
+            PTMono      : "/font/PTMono.css",
+            Roboto      : "/font/Roboto.css",
+            RobotoSlab  : "/font/RobotoSlab.css",
+            Rosario     : "/font/Rosario.css",
+            UbuntuMono  : "/font/UbuntuMono.css"
+        },
+
+        Suffix : {
+            about : "简单地活着, 肆意又精彩."
+        },
+            
+        Theme : {
+            url  : "https://github.com/first19326/Hexo-LiveForCode",
+            name : "Hexo - Live For Code"
+        }  
+    };
+</script>
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

@@ -290,14 +290,24 @@ Donate:
 Search:
   applicationID: "XAR1P767LX"
   apiKey: "9454b908d51bd3d979deb8c76b840180"
-  indexName: "Notes"
+  adminApiKey: "bd5fafbec67db28c38fd5487086cd052"
+  chunkSize: 5000
+  indexName: "my-hexo-blog"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
   hits:
     page: 10
   labels:
     placeholder: "搜索"
     empty: "未发现与 「${query}」 相关的内容"
     stats: "${hits} 条相关条目，使用了 ${time} 毫秒"
-
 
 # ---- Comment配置 ----
 Comment:
