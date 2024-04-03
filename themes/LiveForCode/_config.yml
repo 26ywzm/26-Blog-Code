@@ -318,8 +318,8 @@ Comment:
 # ---- Valine配置 ----
 Valine: 
   el: ".comments-content"
-  appId: "srhKtvWPQTWYKh3qX8G8M7v0-gzGzoHsz"
-  appKey: "8uVSP1q6UlALVC5igYfIfv2h"
+  appId: "jgTEeDQ0m1LDTOV7XWQoVUyI-MdYXbMMI"
+  appKey: "aogPg33rWnyZg2I4INZAq9Rj"
   # 必须设置, 国内版本需域名备案
   serverURLs: 
   placeholder: "你是我一生只会遇见一次的惊喜..."
@@ -483,3 +483,9 @@ Suffix:
 Theme: 
   url: "https://github.com/first19326/Hexo-LiveForCode"
   name: "Hexo - Live For Code"
+
+# ---- RSS ----
+feed:
+  type: atom
+  path: atom.xml
+  limit: 10

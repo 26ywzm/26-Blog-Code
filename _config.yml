@@ -67,3 +67,7 @@ deploy:
   type: ''
 '[key]': '[value]'
 
+feed:
+  type: atom
+  path: atom.xml
+  limit: 10
