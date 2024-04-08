@@ -256,10 +256,7 @@ MenuLink:
 # 页脚样式
 FooterStyle: 2
 # 页脚标语
-BottomText: "<div><span class='face'>ღゝ◡╹)ノ♡</span></div>
-<div>【岂能尽如人意<span><i class='iconfont icon-like-fill'></i></span>但求无愧于心】</div>
-<div>&copy; 2020-2023 WorstOne. All Rights Reserved.</div>
-"
+BottomText: "<div><span class='face'>ღゝ◡╹)ノ♡</span></div><div>【岂能尽如人意<span><i class='iconfont icon-like-fill'></i></span>但求无愧于心】</div><div>&copy; 2023-2024 WorstOne. All Rights Reserved.</div><div>备案号：</div>"
 
 # ---- 控制台输出 ----
 ConsoleList:
@@ -317,7 +314,7 @@ Comment:
 
 # ---- Valine配置 ----
 Valine: 
-  el: ".comments-content"
+  el: ""
   appId: "jgTEeDQ0m1LDTOV7XWQoVUyI-MdYXbMMI"
   appKey: "aogPg33rWnyZg2I4INZAq9Rj"
   # 必须设置, 国内版本需域名备案
