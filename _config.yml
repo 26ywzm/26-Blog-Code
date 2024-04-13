@@ -64,7 +64,9 @@ exclude: null
 ignore: null
 theme: LiveForCode
 deploy:
-  type: ''
+  type: 'git'
+  repo: 'git@github.com:26ywzm/26-Blog-Code.git'
+  branch: 'main'
 '[key]': '[value]'
 
 feed:
