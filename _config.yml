@@ -21,7 +21,10 @@ archive_dir: archive
 category_dir: category
 code_dir: downloads/code
 i18n_dir: ':lang'
-skip_render: null
+skip_render: 
+  - "*.js"
+  - "*.css"
+  - "*.html"
 new_post_name: ':title.md'
 default_layout: post
 titlecase: false
