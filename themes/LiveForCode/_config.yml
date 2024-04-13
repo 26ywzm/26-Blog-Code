@@ -256,7 +256,7 @@ MenuLink:
 # 页脚样式
 FooterStyle: 2
 # 页脚标语
-BottomText: "<div><span class='face'>ღゝ◡╹)ノ♡</span></div><div>【岂能尽如人意<span><i class='iconfont icon-like-fill'></i></span>但求无愧于心】</div><div>&copy; 2023-2024 WorstOne. All Rights Reserved.</div><div>备案号：</div>"
+BottomText: "<div><span class='face'>ღゝ◡╹)ノ♡</span></div><div>【岂能尽如人意<span><i class='iconfont icon-like-fill'></i></span>但求无愧于心】</div><div>&copy; 2023-2024 WorstOne. All Rights Reserved.</div>"
 
 # ---- 控制台输出 ----
 ConsoleList:
