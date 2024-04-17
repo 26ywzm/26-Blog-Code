@@ -91,13 +91,13 @@ feed:
 
  # hexo-neat
  # md博文压缩
- neat_enable: true
+neat_enable: true
  # 压缩html（ejs，swig等也属于html格式片段）
- neat_html:
+neat_html:
    enable: true
    exclude:
  # 压缩css  
- neat_css:
+neat_css:
    enable: true
    exclude:
      - '*.min.css'
@@ -105,7 +105,7 @@ feed:
      - 'jquery.fancybox.min.css'
      - '**/live2d-widget/waifu.css'
  # 压缩js
- neat_js:
+neat_js:
    enable: true
    mangle: true #打印日志
    output:
