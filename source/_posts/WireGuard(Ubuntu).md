@@ -1,5 +1,5 @@
 ---
-title: 组网神器WireGuard配置Ubuntu教程
+title: WireGuard配置Ubuntu教程
 comments: true
 donate: true
 tags: WireGuard
