@@ -6,6 +6,7 @@ tags: WireGuard
 categories: 网络
 description: WireGuard(Ubuntu版本)组网教程.
 sticky: 10000
+abbrlink: 1297332112
 date: 2024-04-24 00:00:00
 from:
 url:
