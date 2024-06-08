@@ -31,15 +31,20 @@ friends  :
         avatar  : /image/friend/volantis.png
         url     : https://volantis.js.org/
         about   : Hexo-Volantis 主题
-  - 
-    head        : 友情链接
-    description : 
-    friend      :
       - 
         name    : WorstOne
         avatar  : /image/sidebar/avatar.jpg
         url     : https://notes.worstone.cn
         about   : Live For Code 作者
+  - 
+    head        : 友情链接
+    description : 
+    friend      :
+      - 
+        name    : Star_caorui
+        avatar  : /image/friend/Star_caorui.jpg
+        url     : https://blog.inetech.fun/
+        about   : iNetech Blog 作者
 ---
 > 欢迎各位朋友前来交换友链，本站友链接受以下类型的网站：
 > - 个人博客
