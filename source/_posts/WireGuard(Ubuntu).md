@@ -3,7 +3,7 @@ title: WireGuard配置Ubuntu教程
 comments: true
 donate: true
 tags: WireGuard
-categories: 网络
+categories: 网络技术
 description: WireGuard(Ubuntu版本)组网教程.
 sticky: 10000
 abbrlink: 1297332112
