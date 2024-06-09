@@ -9,7 +9,7 @@ GitHubRepositories: "26-Blog-Code"
 # 博主名称, 文章后缀和主页图片上都会使用此名称
 User: "26英文字母"
 # 用户头像URL
-UserAvatar: "/image/sidebar/avatar1.jpg"
+UserAvatar: "/image/sidebar/avatar1.webp"
 # 创建时间
 WebsiteStartDate: "2024-03-26"
 # 个人主页URL
@@ -509,3 +509,9 @@ feed:
   type: atom
   path: atom.xml
   limit: 10
+
+  # 显示每篇文章的访问者数量。
+leancloud_visitors:
+  enable: true
+  app_id: aomBR3PJCGS45nfMxddPuczn-MdYXbMMI 
+  app_key: AdxVMX4TqJTOJvweT9kFqT3K

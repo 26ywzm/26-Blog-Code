@@ -9,7 +9,7 @@ GitHubRepositories: "26-Blog-Code"
 # 博主名称, 文章后缀和主页图片上都会使用此名称
 User: "26英文字母"
 # 用户头像URL
-UserAvatar: "/image/sidebar/avatar1.jpg"
+UserAvatar: "/image/sidebar/avatar1.webp"
 # 创建时间
 WebsiteStartDate: "2020-01-01"
 # 个人主页URL
@@ -54,9 +54,9 @@ Loading:
       stroke: "#272633"
       base: null
       child: "#272633"
-    # When false the spring will reverse normally.
+    # 错误时，弹簧将正常反转.
     alwaysForward: true
-    # A number from 0.1 to 0.9 || null for full rotation. 
+    # 0.1到0.9之间的数字||null表示完全旋转. 
     restAt: 0.5
     renderBase: false
 
