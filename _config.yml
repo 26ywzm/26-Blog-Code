@@ -4,115 +4,118 @@ description: 本网站记录了一些学习日常，和学习内容，欢迎大�
 keywords: 个人笔记，个人学习平台
 author: 26英文字母
 language: en
-timezone: ''
-url: https://26ywzm.icu:4000
-permalink: posts/:abbrlink/
+timezone: ''  # 时区设置为空时，使用服务器时区
+
+url: https://26ywzm.icu:4000  # 站点 URL
+permalink: posts/:abbrlink/  # 永久链接的格式
 permalink_defaults: null
 
 pretty_urls:
-  trailing_index: true
-  trailing_html: true
+  trailing_index: true  # 添加末尾的 index.html
+  trailing_html: true   # 添加末尾的 .html
 
 abbrlink:
-  alg: crc32
-  rep: dec
+  alg: crc32  # 生成短链接的算法
+  rep: dec    # 短链接格式
 
-source_dir: source
-public_dir: public
+source_dir: source  # 资源文件目录
+public_dir: public  # 生成的静态文件目录
 
-tag_dir: tag
-archive_dir: archive
-category_dir: category
-code_dir: downloads/code
-i18n_dir: ':lang'
+tag_dir: tag  # 标签页目录
+archive_dir: archive  # 归档页目录
+category_dir: category  # 分类页目录
+code_dir: downloads/code  # 代码下载目录
+i18n_dir: ':lang'  # 国际化目录
 
 skip_render: 
-  - "*.js"
-  - "*.css"
-  - "*.html"
+  - "*.js"  # 跳过渲染 .js 文件
+  - "*.css"  # 跳过渲染 .css 文件
+  - "*.html"  # 跳过渲染 .html 文件
 
-new_post_name: ':title.md'
+new_post_name: ':title.md'  # 新文章的默认文件名
 
-default_layout: post
-titlecase: false
+default_layout: post  # 默认布局
+titlecase: false  # 文章标题是否转换为标题格式
 external_link:
-  enable: true
-  field: site
-  exclude: ''
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-future: true
+  enable: true  # 外部链接在新窗口打开
+  field: site  # 仅对站点中的链接生效
+  exclude: ''  # 排除的外部链接
+filename_case: 0  # 文件名转换为小写
+render_drafts: false  # 是否渲染草稿
+post_asset_folder: false  # 每篇文章是否使用独立的资源文件夹
+relative_link: false  # 是否使用相对链接
+future: true  # 是否显示未来的文章
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
+  enable: true  # 启用代码高亮
+  line_number: true  # 显示行号
+  auto_detect: false  # 自动检测代码语言
+  tab_replace: ''  # 替换 Tab 的字符
+  wrap: true  # 代码自动换行
+  hljs: false  # 使用 highlight.js
+
 prismjs:
-  enable: false
+  enable: false  # 禁用 prismjs
   preprocess: true
   line_number: true
   tab_replace: ''
+
 index_generator:
-  path: ''
-  per_page: 10
-  order_by: '-date'
-default_category: uncategorized
+  path: ''  # 首页路径
+  per_page: 10  # 每页文章数
+  order_by: '-date'  # 按日期倒序排列
+
+default_category: uncategorized  # 默认分类
 category_map: null
 tag_map: null
-meta_generator: true
-date_format: YYYY-MM-DD
-time_format: HH:mm:ss
-updated_option: mtime
-per_page: 10
-pagination_dir: page
+meta_generator: true  # 生成元数据
+date_format: YYYY-MM-DD  # 日期格式
+time_format: HH:mm:ss  # 时间格式
+updated_option: mtime  # 更新选项
+per_page: 10  # 每页文章数
+pagination_dir: page  # 分页目录
 include: null
 exclude: null
 ignore: null
-theme: LiveForCode
+theme: LiveForCode  # 使用的主题
+
 deploy:
-  type: 'git'
-  repo: 'git@github.com:26ywzm/26-Blog-Code.git'
-  branch: 'main'
-'[key]': '[value]'
+  type: 'git'  # 部署类型
+  repo: 'git@github.com:26ywzm/26-Blog-Code.git'  # 仓库地址
+  branch: 'main'  # 分支名称
+
+'[key]': '[value]'  # 未知配置项
 
 feed:
-  type: atom
-  path: atom.xml
-  limit: 10
+  type: atom  # Feed 类型
+  path: atom.xml  # Feed 路径
+  limit: 10  # Feed 中的文章数量
 
-# #端口设置
-# server:
-#   port: 4000  
-
-
- # hexo-neat
- # md博文压缩
-neat_enable: true
- # 压缩html（ejs，swig等也属于html格式片段）
+# hexo-neat 插件配置
+neat_enable: true  # 启用 hexo-neat
 neat_html:
-   enable: true
-   exclude:
- # 压缩css  
+   enable: true  # 启用 HTML 压缩
+   exclude:  # 排除的文件
 neat_css:
-   enable: true
+   enable: true  # 启用 CSS 压缩
    exclude:
-     - '*.min.css'
+     - '*.min.css'  # 排除压缩的 CSS 文件
      - '**/*.min.css'
      - 'jquery.fancybox.min.css'
      - '**/live2d-widget/waifu.css'
- # 压缩js
 neat_js:
-   enable: true
-   mangle: true #打印日志
+   enable: true  # 启用 JS 压缩
+   mangle: true  # 启用代码混淆
    output:
    compress:
-   exclude: #排除文件
+   exclude:  # 排除的文件
      - '*.min.js'
      - '**/*.min.js'
      - 'jquery.fancybox.min.js'
      - '**/live2d-widget/*.js'
      - '**/live2d-widget/*.min.js'
+
+# 显示每篇文章的访问者数量。
+leancloud_visitors:
+  enable: true
+  app_id: aomBR3PJCGS45nfMxddPuczn-MdYXbMMI 
+  app_key: AdxVMX4TqJTOJvweT9kFqT3K
