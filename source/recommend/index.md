@@ -31,6 +31,27 @@ friends  :
         avatar  : https://picture.gptkong.com/20240610/202494d87d88234957a53e17149129f5ca.png
         url     : https://hellowindows.cn/
         about   : 网站包括所有Windosw镜像文件，有需要系统镜像的可以去看看。
+      - 
+        name    : 极简壁纸
+        avatar  : https://www.loliapi.com/acg/pp/
+        url     : https://bz.zzzmh.cn/index/
+        about   : 一个高清无码的壁纸网站，推荐大家去看看。
+      - 
+        name    : 背景消除
+        avatar  : https://api.sretna.cn/kind/ar.php
+        url     : https://www.remove.bg/zh
+        about   : 免费，好用的背景消除网站，上传图片自动消除背景。
+      - 
+        name    : Qwerty Learner
+        avatar  : https://ui-avatars.com/api/?name=bei+jing
+        url     : https://qwerty.kaiyi.cool/
+        about   : 一个学英语的好地方，可惜我用不明白😅
+      - 
+        name    : wikiHow
+        avatar  : https://api.multiavatar.com/Starcrasher.png https://api.multiavatar.com/Starcrasher.svg
+        url     : https://zh.wikihow.com/
+        about   : 互联网上最值得信赖的指南网站（它们的标语）
+      
 ---
 
 >  页面  _bug_ 加一，问题尚未解决😥
