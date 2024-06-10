@@ -43,15 +43,18 @@ friends  :
         about   : 免费，好用的背景消除网站，上传图片自动消除背景。
       - 
         name    : Qwerty Learner
-        avatar  : https://ui-avatars.com/api/?name=bei+jing
+        avatar  : https://npm.elemecdn.com/ushio-api-img-moe@5.0.53/img_533_2000x1500_96_null_normal.jpg
         url     : https://qwerty.kaiyi.cool/
         about   : 一个学英语的好地方，可惜我用不明白😅
       - 
         name    : wikiHow
-        avatar  : https://api.multiavatar.com/Starcrasher.png https://api.multiavatar.com/Starcrasher.svg
+        avatar  : https://npm.elemecdn.com/ushio-api-img-moe@5.0.100/img_1006_600x600_96_null_normal.jpg
         url     : https://zh.wikihow.com/
         about   : 互联网上最值得信赖的指南网站（它们的标语）
       
 ---
 
 >  页面  _bug_ 加一，问题尚未解决😥
+<!-- https://ui-avatars.com/api/?name=bei+jing -->
+<!-- https://api.yimian.xyz/img -->
+<!-- https://www.loliapi.com/acg/pp/ -->
