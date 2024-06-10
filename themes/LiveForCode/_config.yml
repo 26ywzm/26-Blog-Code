@@ -211,10 +211,10 @@ MenuList:
   -
     name: "推荐"
     icon: "icon-rss"
-    href: "/atom.xml"
-    type: ""
+    href: "/recommend"
+    type: "recommend"
     class: ""
-    target: "_blank"
+    target: "_self"
   -
     name: "搜索"
     icon: "icon-search-menu"
