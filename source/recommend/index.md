@@ -58,7 +58,7 @@ friends  :
         about   : “力扣”一个学习计算机的网站，程序员必须知道的网站。
       - 
         name    : Git模拟
-        avatar  : https://img.loliapi.cn/i/pp/img80.webp
+        avatar  : https://img.loliapi.cn/i/pp/img96.webp
         url     : https://learngitbranching.js.org/?locale=zh_CN
         about   : 啊！“git”还不太熟练，那你可能非常需要它哦！
       
