@@ -51,10 +51,22 @@ friends  :
         avatar  : https://npm.elemecdn.com/ushio-api-img-moe@5.0.100/img_1006_600x600_96_null_normal.jpg
         url     : https://zh.wikihow.com/
         about   : 互联网上最值得信赖的指南网站（它们的标语）
+      - 
+        name    : 力扣
+        avatar  : https://img.loliapi.cn/i/pp/img80.webp
+        url     : https://leetcode.cn/
+        about   : “力扣”一个学习计算机的网站，程序员必须知道的网站。
+      - 
+        name    : Git模拟
+        avatar  : https://img.loliapi.cn/i/pp/img80.webp
+        url     : https://learngitbranching.js.org/?locale=zh_CN
+        about   : 啊！“git”还不太熟练，那你可能非常需要它哦！
       
 ---
 
 >  页面  _bug_ 加一，问题尚未解决😥
+
+>  如果有好用的推荐和需要的工具都可以联系我哦！
 <!-- https://ui-avatars.com/api/?name=bei+jing -->
 <!-- https://api.yimian.xyz/img -->
 <!-- https://www.loliapi.com/acg/pp/ -->
