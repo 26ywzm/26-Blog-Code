@@ -2,12 +2,12 @@
 title: pm2监控和分析服务
 comments: true
 donate: true
-tags: pm2进程
+tags: pm2监控
 categories: 网站管理
-description: PM2 提供了两个高级的监控和分析服务，即 PM2 Plus 和 PM2 Enterprise。这些服务通过在线 Web 界面，提供了比基础 PM2 更丰富的功能，可以更好地监控和管理 Node.js 应用。
+description: PM2 提供了两个高级的监控和分析服务，可以更好地监控和管理 Node.js 应用。
+abbrlink: 755748372
+date: 2024-06-14 00:00:00
 sticky: 
-abbrlink: 
-date: 2024-06-13 00:00:00
 from:
 url:
 author:
@@ -47,18 +47,18 @@ PM2 Plus 是 PM2 提供的高级监控服务，适合个人开发者和小型团
 
 ### 连接应用：
 
-- 安装 PM2 Plus 模块：
+> 安装 PM2 Plus 模块：
 
 ```
     pm2 plus
 ```
 
-- 通过命令行连接应用：
+> 通过命令行连接应用：
 
 ```
     pm2 link <public_key> <secret_key>
 ```
-- 连接后，可以在 PM2 Plus Web 界面上看到应用的详细监控信息。
+> 连接后，可以在 PM2 Plus Web 界面上看到应用的详细监控信息。
 
 ## PM2 Enterprise
 PM2 Enterprise 是为企业级用户设计的高级监控服务，提供比 PM2 Plus 更多的功能和支持。它适合大型团队和企业用户，帮助他们更好地管理和优化大规模的 Node.js 应用。
