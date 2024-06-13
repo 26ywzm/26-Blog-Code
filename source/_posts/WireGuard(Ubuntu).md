@@ -27,7 +27,7 @@ avatar:
 
 
 ### **安装Wireguard（以ubuntu20.04为基础）**
-            
+```        
     #root权限
     sudo -i
 
@@ -37,37 +37,37 @@ avatar:
     #开启IP转发
     echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
     sysctl -p
-            
+```        
 ### **进入配置存储路径，调整目录权限**
-    
+```
     cd /etc/wireguard/
     chmod 0777 /etc/wireguard
     
     #调整目录默认权限
     umask 077
-    
+```
 ### **生成服务器秘钥**
-    
+```
     #生成私钥
     wg genkey > server.key
     
     #通过私钥生成公钥
     wg pubkey < server.key > server.key.pub
-    
+```
 ### **生成客户端(client1)秘钥**
-    
+```
     #生成私钥
     wg genkey > client1.key
     
     #通过私钥生成公钥
     wg pubkey < client1.key > client1.key.pub
-    
+```
 ### **显示所有生成的秘钥**
-
+```
     cat server.key && cat server.key.pub && cat client1.key && cat client1.key.pub
-    
+```    
 ### **自动创建服务器配置文件**
-
+```
     echo "
     [Interface]
     PrivateKey = $(cat server.key) # 填写本机的privatekey 内容
@@ -83,28 +83,28 @@ avatar:
     [Peer]
     PublicKey =  $(cat client1.key.pub)  #自动client1的公钥
     AllowedIPs = 10.0.8.10/32 #客户端所使用的IP" > wg0.conf
-    
+```    
 ### **设置服务器开机自启动**
-
+```
     systemctl enable wg-quick@wg0
-    
+```   
 ### **启动wireguard**
-
+```
     #启动wg0
     wg-quick up wg0
     #关闭wg0
     wg-quick down wg0
-    
+```   
 ### **手动进入创建服务器配置文件**
-    
+```    
     nano /etc/wireguard/wg0.conf
-    
+```    
 ### **wireguard客户端下载地址**
     
     https://www.wireguard.com/install/
     
 ### **客户端配置（以client1为例）**
-    
+```    
     [Interface]
     PrivateKey = 6M8HEZioew+vR3i53sPc64Vg40YsuMzh4vI1Lkc88Xo= #此处为client1的私钥
     Address = 10.0.8.10 #此处为peer规定的客户端IP
@@ -114,9 +114,9 @@ avatar:
     PublicKey = Tt5WEa0Vycf4F+TTjR2TAHDfa2onhh+tY8YOIT3cKjI= #此处为server的公钥
     AllowedIPs = 10.0.8.0/24 #此处为允许的服务器IP
     Endpoint = 114.132.56.178:50814 #服务器对端IP+端口
-    
+```    
 ### **增加服务器客户端节点client2**
-
+```
     #生成私钥
     wg genkey > client2.key
     
@@ -128,3 +128,4 @@ avatar:
     [Peer]
     PublicKey =  $(cat client2.key.pub)  #自动client1的公钥
     AllowedIPs = 10.0.8.11/32 #客户端Client2所使用的IP" >> wg0.conf
+```
