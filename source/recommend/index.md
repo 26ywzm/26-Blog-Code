@@ -61,7 +61,20 @@ friends  :
         avatar  : https://img.loliapi.cn/i/pp/img96.webp
         url     : https://learngitbranching.js.org/?locale=zh_CN
         about   : 啊！“git”还不太熟练，那你可能非常需要它哦！
-      
+  - 
+    head        : 电脑工具推荐
+    description : 
+    friend      :
+      - 
+        name    : Geek 卸载程序
+        avatar  : https://img.loliapi.cn/i/pp/img70.webp
+        url     : https://geekuninstaller.com/
+        about   : 该应用程序是一款令人印象深刻的维护工具，可提供性能和功能。
+      - 
+        name    : Notion笔记
+        avatar  : https://img.loliapi.cn/i/pp/img188.webp
+        url     : https://www.notion.so/
+        about   : 支持电脑端，手机端，网页端三端同步笔记本，值得使用
 ---
 
 >  页面  _bug_ 加一，问题尚未解决😥

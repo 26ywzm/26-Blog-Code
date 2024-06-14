@@ -83,8 +83,6 @@ deploy:
   repo: 'git@github.com:26ywzm/26-Blog-Code.git'  # 仓库地址
   branch: 'main'  # 分支名称
 
-'[key]': '[value]'  # 未知配置项
-
 feed:
   type: atom  # Feed 类型
   path: atom.xml  # Feed 路径

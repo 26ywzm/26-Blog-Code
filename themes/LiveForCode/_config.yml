@@ -287,14 +287,14 @@ BottomText: "<div><span class='face'>ღゝ◡╹)ノ♡</span></div><div>【岂
 # ---- 控制台输出 ----
 ConsoleList:
   -
-    - "Based on cnblogs theme SimpleMemory."
+    - "你在找什么？"
     - ""
   -
-    - "SimpleMemory Author:"
-    - "BNDong"
+    - "需要我帮忙吗？"
+    - ""
   -
-    - "Theme:"
-    - "26-Blog-Code"
+    - "这里应该什么都没有哦！"
+    - ""
 
 
 # ---- 字体图标扩展 ----
